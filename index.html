@@ -2,22 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifolio</title>
+    <title>Fernando Santello Portifólio</title>
+    <link rel="icon" type="image/png" href="resources/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Fernando Santello Logo</div>
+      <div class="logo">Fernando Santello</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#experience">Experiência</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
     </nav>
+    <nav id="hamburguer-nav">
+      <div class="logo">Fernando Santello</div>
+      <div class="hamburguer-menu">
+        <div class="hamburguer-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
