@@ -7,7 +7,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #45475e;
 }
 
 html {
@@ -15,7 +14,7 @@ html {
 }
 
 p {
-  color: rgb(255, 253, 253);
+  color: rgb(85, 85, 85);
 }
 
 a,
@@ -31,7 +30,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 12vh;
+  height: 17vh;
 }
 
 .nav-links {
@@ -41,7 +40,7 @@ nav {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: black;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -55,7 +54,6 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  color: whitesmoke;
 }
 
 .logo:hover {
@@ -83,7 +81,7 @@ a:hover {
 .hamburguer-icon span {
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: black;
   transition: all 0.3 ease-in-out;
 }
 
@@ -187,11 +185,9 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  color: white;
 }
 
 .name {
-  color: white;
   font-size: 3rem;
   text-align: center;
 }
@@ -230,20 +226,83 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(0, 0, 0) 0.1rem solid;
-  font-family: "Poppins", sans-serif;
-  background: black;
-  color: white;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-  color: black;
-  background: white;
-  border: rgb(0, 0, 0) 0.1rem solid;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
   gap: 1rem;
+}
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 50%;
+}
+
+.section__pic-container {
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
 }
