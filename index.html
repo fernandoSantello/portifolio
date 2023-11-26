@@ -11,7 +11,6 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Fernando Santello</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">Sobre</a></li>
@@ -37,6 +36,30 @@
         </div>
       </div>
     </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="resources/profile-picture.png" alt="Foto de Perfil" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, meu nome é</p>
+        <h1 class="name">Fernando <span class="surname">Santello</span></h1>
+        <p class="section__text__p2">Sou um <span class="auto-type"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('resources/CV_FernandoSantello.pdf')"
+          >
+            Baixar CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contato
+          </button>
+        </div>
+        <div id="social-container">
+          <img src="resources/linkedin.png" alt="Meu perfil do LikedIn" class="icon" onclick="location.href='https://linkedin.com/in/fernando-santello-379a98235'"/>
+          <img src="resources/github.png" alt="Meu perfil do Github" class="icon" onclick="location.href='https://github.com/fernandoSantello'"/>
+        </div>
+    </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
   </body>

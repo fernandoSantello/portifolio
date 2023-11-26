@@ -1,8 +1,8 @@
 // script.js
-var typed = new Typed(".auto-type", {
-  strings: ["Desenvolvedor", "Engenheiro de Dados", "Analista de Dados"],
-  typeSpeed: 100,
-  backSpeed: 100,
+const typed = new Typed(".auto-type", {
+  strings: ["Desenvolvedor", "Engenheiro de Dados"],
+  typeSpeed: 50,
+  backSpeed: 50,
   loop: true,
 });
 
