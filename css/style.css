@@ -219,11 +219,6 @@ section {
   height: 2rem;
 }
 
-.icon-tech {
-  cursor: pointer;
-  height: 4rem;
-}
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -299,11 +294,6 @@ section {
   cursor: pointer;
 }
 
-.arrow {
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -323,11 +313,6 @@ section {
   height: 300px;
   width: 300px;
   margin: auto 0;
-}
-
-.section-container-2 {
-  gap: 4rem;
-  height: 50%;
 }
 
 #experience {
@@ -419,8 +404,6 @@ article {
   position: relative;
 }
 
-/* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
@@ -459,8 +442,6 @@ article {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -469,8 +450,6 @@ footer {
 footer p {
   text-align: center;
 }
-
-/* PROJECTS SECTION */
 
 #projects {
   position: relative;
@@ -483,8 +462,8 @@ footer p {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  height: 500px;
+  width: 800px;
 }
 
 .project-title {
