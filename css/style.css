@@ -428,6 +428,7 @@ article {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  margin-right: 3rem;
 }
 
 .contact-info-container p {
