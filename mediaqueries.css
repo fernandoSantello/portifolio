@@ -5,4 +5,8 @@
   #hamburguer-nav {
     display: flex;
   }
+
+  .category-title {
+    grid-column: span 2;
+  }
 }
