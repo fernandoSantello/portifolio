@@ -463,8 +463,8 @@ footer p {
 
 .project-img {
   border-radius: 2rem;
-  height: 250px;
-  width: 400px;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {
