@@ -219,6 +219,22 @@ section {
   height: 2rem;
 }
 
+.icon-tech {
+  cursor: pointer;
+  height: 2rem;
+  transition: transform 0.2s;
+}
+
+.icon-tech:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.icon-tech:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -289,9 +305,24 @@ section {
   border-radius: 2rem;
 }
 
+.certification-name {
+  margin-top: 1rem;
+}
+
 .about-pic__2 {
   border-radius: 2rem;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.about-pic__2:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.about-pic__2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .details-container {
