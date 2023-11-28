@@ -14,7 +14,9 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const clickableContents = document.querySelectorAll(".clickable-content");
+  const clickableContents = document.querySelectorAll(
+    ".clickable-content, .clickable-content__2"
+  );
   const modals = document.querySelectorAll(".modal");
   const closeButtons = document.querySelectorAll(".close");
 

@@ -383,11 +383,30 @@ article {
   cursor: pointer;
 }
 
+.clickable-content__2 {
+  display: flex;
+  text-align: initial;
+  gap: 2.5rem;
+  justify-content: space-around;
+  transition: transform 0.2s;
+}
+
 .clickable-content {
   display: flex;
   text-align: initial;
   gap: 2.5rem;
   justify-content: space-around;
+  transition: transform 0.2s;
+}
+
+.clickable-content:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.clickable-content:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .modal-icon {
