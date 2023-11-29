@@ -13,6 +13,16 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+const counter = document.querySelector(".counter-number");
+async function updateCounter() {
+  let response = await fetch(
+    "https://3aeo7mhfv22tk24pj5h77jnc3e0vugkj.lambda-url.us-east-2.on.aws/"
+  );
+  let data = await response.json();
+  counter.innerHTML = `Este portifólio já teve ${data["views"]} views. <span class="counter-number-colored">Obrigado por contribuir!</span>`;
+}
+updateCounter();
+
 document.addEventListener("DOMContentLoaded", () => {
   const clickableContents = document.querySelectorAll(
     ".clickable-content, .clickable-content__2"
