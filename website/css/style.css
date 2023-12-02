@@ -390,16 +390,22 @@ article {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .modal-content {
+  text-align: left;
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   border-radius: 15px;
+  transform: scale(0.95);
+  transition: transform 0.2s;
 }
+
 .close {
   color: #aaa;
   float: right;
