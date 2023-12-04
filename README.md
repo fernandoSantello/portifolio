@@ -6,7 +6,7 @@ This project was developed as a part of The [Cloud Resume Challenge](http://www.
 
 Bellow is a partial preview of the final webpage.
 
-IMAGEM AQUI
+![Homescreen]([https://raw.githubusercontent.com/fernandoSantello/portifolio/main/resources/images/project-pictures/project-2.png?token=GHSAT0AAAAAACIVC7UKJ22EWPTBD72OGXDQZLN6YGA](https://raw.githubusercontent.com/fernandoSantello/portifolio/main/resources/images/project-pictures/project-1-mainpage.png?token=GHSAT0AAAAAACIVC7UK7QFC7BBXOBDUUGM2ZLOIAGQ) "Homescreen")
 
 ## Project Structure
 
@@ -23,7 +23,7 @@ The repository is organized into the following files and folders:
 ## Cloud Architecture
 The following diagram represents the cloud architecture of this project:
 
-![picture alt](https://raw.githubusercontent.com/fernandoSantello/portifolio/main/resources/images/project-pictures/project-2.png?token=GHSAT0AAAAAACIVC7UKJ22EWPTBD72OGXDQZLN6YGA "Cloud Architecture")
+![picture alt]([https://raw.githubusercontent.com/fernandoSantello/portifolio/main/resources/images/project-pictures/project-2.png?token=GHSAT0AAAAAACIVC7UKJ22EWPTBD72OGXDQZLN6YGA](https://raw.githubusercontent.com/fernandoSantello/portifolio/main/resources/images/project-pictures/project-2.png?token=GHSAT0AAAAAACIVC7UL3HBJCWMR62J6YYPUZLOIAJQ) "Cloud Architecture")
 
 ## Technologies
 This project uses the following technologies:
