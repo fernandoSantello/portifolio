@@ -501,7 +501,7 @@
             <div class="section__pic-container__3">
               <img
                 src="../resources/images/project-pictures/project-2.png"
-                alt="Project 1"
+                alt="Project 2"
                 class="project-img"
               />
             </div>
@@ -558,7 +558,7 @@
               <div class="section__pic-container__3">
                 <img
                   src="../resources/images/project-pictures/project-3.png"
-                  alt="Project 1"
+                  alt="Project 3"
                   class="project-img"
                 />
               </div>
@@ -594,11 +594,11 @@
               <div class="section__pic-container__3">
                 <img
                   src="../resources/images/project-pictures/project-4.png"
-                  alt="Project 1"
+                  alt="Project 4"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Fictional Data Platform</h2>
+              <h2 class="experience-sub-title project-title">Data Platform Architecture</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -615,21 +615,37 @@
               </div>
                 <div id="modal" class="modal">
                   <div class="modal-content">
-                    <span class="close">&times;</span>           
+                    <span class="close">&times;</span>
+                          <img src="../resources/images/tech-icons/Docker.png" alt="Modal Icon" class="modal-icon" />           
                           <img src="../resources/images/tech-icons/Airflow.png" alt="Modal Icon" class="modal-icon" />
                           <img src="../resources/images/tech-icons/Mysql.png" alt="Modal Icon" class="modal-icon" />
                           <img src="../resources/images/tech-icons/Postgresql.png" alt="Modal Icon" class="modal-icon" />
-                          <img src="../resources/images/tech-icons/Mongodb.png" alt="Modal Icon" class="modal-icon" />
+                          <img src="../resources/images/tech-icons/AWS.png" alt="Modal Icon" class="modal-icon" />
+                          <img src="../resources/images/tech-icons/Python.png" alt="Modal Icon" class="modal-icon" />
+                          <img src="../resources/images/tech-icons/Pandas.png" alt="Modal Icon" class="modal-icon" />
                           <img src="../resources/images/tech-icons/Spark.png" alt="Modal Icon" class="modal-icon" />
-                          <img src="../resources/images/tech-icons/PowerBI.png" alt="Modal Icon" class="modal-icon" />
-                          <img src="../resources/images/tech-icons/Docker.png" alt="Modal Icon" class="modal-icon" />
+                          <img src="../resources/images/tech-icons/PowerBI.png" alt="Modal Icon" class="modal-icon" />                         
                           <img src="../resources/images/tech-icons/Git.png" alt="Modal Icon" class="modal-icon" />
-                          <h2>Fictional Data Platform</h2>
-                          <p>Estou finalizando o projeto final feito na especialização IBM para contâineres Docker. Ao finalizar, subo a descrição aqui.<br>
-                            <img
-                              src="../resources/images/project-pictures/project-4.png"
-                            />
-                          </p>
+                          <h2>Data Platform Architecture</h2>
+                          <p>Esse projeto começou como o projeto final da especializaçao IBM Data Engineering, mas evoluiu para algo muito diferente. No início eu queria
+                            replicar a estrutura do projeto final, mas fui tendo ideias, fui pensando de maneira diferente e idealizando o que gostaria de fazer, e acabei aqui:<br>
+                            <br>
+                            <div class="section__pic-container__3">
+                              <img
+                                src="../resources/images/project-pictures/project-4.png"
+                              />
+                            </div>
+                            <br>
+                            <p>Ele virou a junção de vários conhecimentos que eu possuo. Cloud, modelagem, estruturação de pipelines, ML com Spark e Analytics com PBI. Gostaria de elaborar porque ela funciona como ele funciona. Antes de mais nada, só deixo claro um ponto: o foco deste projeto é a arquitetura.</p><br>
+                            <p>Primeiro: Airflow. Airflow foi uma ferramenta de orquestração que aprendi recentemente e coloquei em prática em um ambiente controlado no decorrer da minha especialização. Pra esse projeto, tive que estruturar uma arquitetura Airflow do zero. A Apache fornece um docker-compose incrível para o Airflow sendo necessário apenas algumas alterações para que se tenha um ambiente local disponível. Criar uma imagem personalizada com as bibliotecas necessárias é fácil e é só usar nesse compose. Depois de fazer uma vez, sei como fazer para todas as vezes que virão.</p><br>
+                            <p>Esse Airflow irá servir para orquestrar o pipeline que move dados entre três diferentes bancos: ingestão, warehouse local e warehouse cloud.</p><br>
+                            <p>O banco de dados de ingestão serve somente para armazenar dados puros de uma API que trás informações sobre criptomoedas. Esses dados puros serão posteriormente tratados e armazenados em outro local. Dá pra chamar de um micro processo de ELT. Tirando dados de uma fonte, carregando em um banco e os tratando posteriormente para que tenham uma usabilidade mais objetiva.</p><br>
+                            <p>Na próxima etapa do pipeline, os dados serão extraídos do banco de ingestão, tratados e carregados em um warehouse local Postgres. Novamente, é possível identificar um micro processo de ETL. Tirando dados de uma fonte, tratando e os carregando em um local para armazegem. Nesse projeto os processos de ELT e ETL se sobrepões, mas ainda assim acho interessante que é possível indetifica-los.</p><br>
+                            <p>Para administração dos bancos, também compus as respectivas ferramentas de gerenciamento, phpMyAdmin e pgAdmin. Isso trás uma clareza na visão de monitoramento.</p><br>
+                            <p>Então os dados são extraídos novamente para serem armazenados em um ambiente cloud, nesse caso uma instância do AWS RDS. Porque cloud? Por duas razões: eu gostaria de ter estes dados disponíveis com facilidade para outras pessoas e aplicações. Colocar em uma instância cloud ao invés de uma local era o melhor jeito de alcançar este objetivo. Segundo motivo: eu queria usar o AWS Quicksight. Porém ele é pago e mais caro do que eu esperava, então me restringi ao Power BI mesmo.</p><br>
+                            <p>E a partir deste ambiente cloud, eu posso me conectar ao RDS e utilizar os dados para ML no Spark e Analytics no Power BI. É um processo beginning to end de dados, desde sua coleta até a derivação de insights.</p><br>
+                            <p>Digo que o foco do projeto é arquitetura, porque no momento ela está processando dados de criptomoedas. Mas ele foi arquitetado (desde pipeline até as próprias classes utilizadas no programa) de modo extremamente maleável. Com poucas mudanças, é possível se conectar a fontes diferentes e processar dados diferentes. A arquitetura em si pode e será reaproveitada para outros projetos posteriores, já que é extremamente funcional e maleável.</p><br>
+                            <p>Fiquei satisfeito com os resultados do projeto. Consegui arquitetar do zero uma estrutura interessante. Fiz o pipeline em Airflow para praticar, e continuei praticamento desenvolvimento em Python e Pandas. Me senti seguro utilizando AWS RDS, sem dificuldades para implementação. Me sinto mais seguro das minhas habilidades.</p>
                   </div>
                 </div>
               </div>           
